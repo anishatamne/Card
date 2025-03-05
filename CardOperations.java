@@ -79,6 +79,14 @@ public class CardOperations {
                 System.out.println(deck.get(i));
             }
         }
+
+    // h) Shuffles the deck randomly
+    public void shuffleDeck() {
+        Collections.shuffle(deck);
+        System.out.println("Deck shuffled.");
+    }
+}
+
     
 
     
