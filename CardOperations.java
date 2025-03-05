@@ -23,9 +23,9 @@ public class CardOperations {
         }
 
 
-    // b) Prints all cards in the deck
-    public void printDeck() {
-        for (Card card : deck) {
+         // b) Prints all cards in the deck
+         public void printDeck() {
+            for (Card card : deck) {
             System.out.println(card);
         }
     }
@@ -38,6 +38,17 @@ public class CardOperations {
                 System.out.println("Invalid index.");
             }
         }
+
+            // d) Prints all cards from the same suit
+            public void sameCard(String suit) {
+                for (Card card : deck) {
+                      if (card.getSuit().equalsIgnoreCase(suit)) {
+                        System.out.println(card);
+            }
+        }
+    }
+
+
     
 
 
