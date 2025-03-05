@@ -49,6 +49,17 @@ public class CardOperations {
     }
 
 
+        // e) Prints all cards having the same rank
+        public void compareCard(String rank) {
+            for (Card card : deck) {
+                if (card.getRank().equalsIgnoreCase(rank)) {
+                    System.out.println(card);
+                }
+            }
+        }
+    
+
+
     
 
 
