@@ -57,6 +57,20 @@ public class CardOperations {
                 }
             }
         }
+
+
+        
+    // f) Searches for a specific card in the deck
+    public void findCard(String suit, String rank) {
+        for (Card card : deck) {
+            if (card.getSuit().equalsIgnoreCase(suit) && card.getRank().equalsIgnoreCase(rank)) {
+                System.out.println("Card found: " + card);
+                return;
+            }
+        }
+        System.out.println("Card not found.");
+    }
+
     
 
 
